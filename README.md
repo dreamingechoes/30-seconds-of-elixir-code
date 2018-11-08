@@ -8,7 +8,7 @@
 
 **Note**: This project is inspired by [30 Seconds Of Code](https://github.com/30-seconds/30-seconds-of-code), but there's no affiliation of any kind with that project.
 
-**Always work in progress.**
+:sparkles: **Always work in progress** :sparkles:
 
 ## Table of Contents
 
