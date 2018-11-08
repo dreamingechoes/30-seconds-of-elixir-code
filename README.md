@@ -18,7 +18,7 @@
 
   <summary>View contents</summary>
 
-  * [`all_equal`](#allequal)
+  * [`all_equal`](#all_equal)
 
 </details>
 
