@@ -46,6 +46,55 @@ def all_equal(arr), do: arr |> Enum.dedup() |> Enum.count() == 1
 
 <br>[⬆ Back to top](#table-of-contents)
 
+### array_to_csv
+
+Converts a 2D array to a comma-separated values (CSV) string.
+
+```elixir
+def arrayToCSV(arr), do: arr |> Enum.join(",")
+```
+
+<details>
+  <summary>Examples</summary>
+
+  ```elixir
+  array_to_csv([1, 2, 3, 4])    # "1,2,3,4"
+  ```
+</details>
+
+<br>[⬆ Back to top](#table-of-contents)
+
+### bifurcate
+
+Splits values into two groups. If an element in filter is truthy, the corresponding element in the collection belongs to the first group; otherwise, it belongs to the second group.
+
+```elixir
+def bifurcate(arr, predicate) do
+  Enum.reduce(
+    arr,
+    %{a: [], b: []},
+    fn x, ac -> 
+      if (predicate.(x)) do
+        %{a: [x] ++ ac[:a], b: ac[:b]}
+      else
+        %{a: ac[:a], b: [x] ++ ac[:b]}
+      end
+    end
+  )
+end
+```
+
+<details>
+  <summary>Examples</summary>
+
+  ```elixir
+  bifurcate([1, 2, 3, 4], fn x -> rem(x, 2) == 0 end)
+  # %{a: [4, 2], b: [3, 1]}
+  ```
+</details>
+
+<br>[⬆ Back to top](#table-of-contents)
+
 ----------------------------
 
 This project was developed by [dreamingechoes](https://github.com/dreamingechoes).
