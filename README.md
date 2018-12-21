@@ -19,6 +19,8 @@
   <summary>View contents</summary>
 
   * [`all_equal`](#all_equal)
+  * [`array_to_csv`](#array_to_csv)
+  * [`bifurcate`](#bifurcate)
 
 </details>
 
@@ -51,7 +53,7 @@ def all_equal(arr), do: arr |> Enum.dedup() |> Enum.count() == 1
 Converts a 2D array to a comma-separated values (CSV) string.
 
 ```elixir
-def arrayToCSV(arr), do: arr |> Enum.join(",")
+def array_to_csv(arr), do: arr |> Enum.join(",")
 ```
 
 <details>
