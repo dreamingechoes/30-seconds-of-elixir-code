@@ -75,7 +75,7 @@ def bifurcate(arr, predicate) do
   Enum.reduce(
     arr,
     %{a: [], b: []},
-    fn x, ac -> 
+    fn x, ac ->
       if (predicate.(x)) do
         %{a: [x] ++ ac[:a], b: ac[:b]}
       else
@@ -96,6 +96,11 @@ end
 </details>
 
 <br>[⬆ Back to top](#table-of-contents)
+
+
+## Contributing
+
+You can contribute to this project by [sending a pull request](https://github.com/dreamingechoes/30-seconds-of-elixir-code/pull/new/master) with your new code snippets, or by [creating a new issue](https://github.com/dreamingechoes/30-seconds-of-elixir-code/issues/new) if you want that a new section or snippet is added. Here you have the alphabetical [list of contributors](CONTRIBUTORS.md) of this repository.
 
 ----------------------------
 
